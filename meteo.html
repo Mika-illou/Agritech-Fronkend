@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="meteo.css">
+</head>
+<body>
+
+        <!-- navbar-- -->
+    <input type="checkbox" id="menuToggle">
+    <nav class="nav_menu">
+        <div class="logo">
+            <nav class="d-flex align-items-center gap-3">
+                <img src="./image/favico.png" alt="logo" width="50" height="50">
+                <h1 class="m-0">Agritech App</h1>
+            </nav>
+        </div>
+         <label for="menuToggle" class="menu-btn ">
+            <div class="dots d-flex flex-column gap-1">
+                <span></span><span></span><span></span>
+            </div>
+        </label>
+    </nav>
+    <label for="menuToggle" class="overlay"></label>
+    <!-- sidebar -->
+    <aside class="sidebar">
+        <div class="menu">
+            <nav class="d-flex align-items-center gap-3">
+                <img src="../image/favico.png" alt="logo" width="50" height="50">
+                <h1 class="m-0">Agritech Menu</h1>
+            </nav>
+            <!-- bouton pour fermer (réutilise la même checkbox via label ciblant l'id) -->
+            <label class="close-btn fs-1" for="menuToggle" aria-label="Fermer le menu">✕</label>
+        </div>
+
+         <nav class="mt-5 d-flex justify-content-center align-items-center">
+           <button class="button_connect btn btn-success p-3 px-5 text-white rounded-5 fw-bold">
+                 <a href="index.html"></a>Connect <i class="bi bi-box-arrow-in-left"></i></a>
+            </button>
+        </nav>
+
+        <hr>
+        
+         <nav>
+            <ul class="d-flex flex-column fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" href="home.html">Home <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="formation.html">Formations <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="meteo.html">Météo <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="indicateur.html">Indicateurs <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+         <hr>
+         <p class="text-center">Social link:</p>
+        <nav class="d-flex justify-content-center align-items-center">
+            <div class="niger d-flex align-items-center gap-2">
+                <img src="./image/Niger.png" alt="Niger" width="50" height="30">
+                <span class="px-1">NE</span>
+            </div>
+            <div class="icoin d-flex px-1">
+                <i class="bi bi-twitter-x"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </nav>
+
+        <nav class="d-flex flex-column justify-content-center align-items-center gap-1 mt-2 text-dark">
+            <div><i class="fas fa-envelope"></i> support@agritech</div>
+            <div><i class="fas fa-phone"></i> (00227) 99 98 97 96</div>
+        </nav>
+
+    </aside>
+<!-- contenus -->
+
+    <header class="header_1 d-flex justify-content-between align-items-center p-4 container-fluid">
+        <nav class="nav_1 d-flex gap-4">
+            <div><i class="fas fa-envelope"></i> support@agritech</div>
+            <div><i class="fas fa-phone"></i> (00227) 99 98 97 96</div>
+        </nav>
+
+        <nav class="d-flex align-items-center gap-3">
+            <img src="./image/favico.png" alt="logo" width="50" height="50">
+            <h1 class="m-0">Agritech App</h1>
+        </nav>
+
+        <nav class="d-flex align-items-center gap-3">
+            <div class="niger d-flex align-items-center gap-2 p-2">
+                <img src="../image/Niger.png" alt="Niger" width="50" height="30">
+                <span>NE</span>
+            </div>
+            <div class="icoin d-flex gap-3">
+                <i class="bi bi-twitter-x"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HEADER 2 -->
+    <header class="header_2 d-flex justify-content-between align-items-center p-4 container-fluid">
+
+        <!-- Search Bar -->
+        <nav>
+            <form class="nav_2 d-flex">
+                <div class="input-group">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class="form-control" placeholder="Search anything...">
+                </div>
+            </form>
+        </nav>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="d-flex fw-bold gap-4 m-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Home <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formation.html">Formations <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="meteo.html">Météo <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="indicateur.html">Indicateurs <i class="bi bi-arrow-up-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Button Connect -->
+        <nav>
+            <button class="button_connect btn btn-success p-3 px-5 text-white rounded-5 fw-bold">
+                <a href="index.html">Connect <i class="bi bi-box-arrow-in-left"></i></a>
+            </button>
+        </nav>
+    </header>
+     
+    <div class="container mt-5 position-relative text-center cont_image mb-5">
+            <img src="./image/Home Carroussel.jpg" class="img-fluid rounded banner-img" alt="Image">
+            <div class="banner-text position-absolute top-50 start-50 translate-middle text-white">
+                <h2 class="fw-bold small-title">
+                    Météo
+                </h2>
+                <h1 class="fw-bold main-title">
+                    Niamey-Niger
+                </h1>
+            </div>
+    </div>
+
+    <footer class=" shadow shadow-ligh bg-light text-dark pt-5 pb-4 p-5">
+         <!-- Newsletter -->
+        <div class="d-flex align-items-end justify-content-end gap-5 mb-5">
+            <h6 class="mt-3 fw-bold">Join Our Newsletter</h6>
+            <form class="d-flex">
+                <input type="email" class="form-control" placeholder="Enter your Email">
+                <button class="text-white fou_Col ms-2 ps-4 pe-4 border-0 rounded-5">S'abonner</button>
+            </form>
+        </div>
+
+        <div class="row photo">
+            <!-- LOGO + TEXTE -->
+            <div class="col-12 col-678-6 col-lg-3">
+                <h4 class="fw-bold"><img src="./image/favico.png" width="45"/> Agritech App</h4>
+                <p>
+                Organic farming avoids toxins. Farmers care for soil 
+                and grow crops that are safe, natural. Farmers care for soil.
+                </p>
+                <p class="fw-semibold">Suivez nous sur:</p>
+                <div class="sui_info">
+                <a href="#" class="me-3 fs-4"> <i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="me-3 fs-4"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- LIENS UTILES -->
+            <div class="col-12 col-678-6 col-lg-3">
+                <h5 class="fw-bold">Liens Utiles</h5>
+                <ul class="list-unstyled">
+                <li>> Home</li>
+                <li>> Formations</li>
+                <li>> Météo</li>
+                <li>> Indicateurs</li>
+                </ul>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="col-12 col-678-6 col-lg-3">
+                <h5 class="fw-bold">Nos Services</h5>
+                <ul class="list-unstyled">
+                <li>> Home</li>
+                <li>> Formations</li>
+                <li>> Météo</li>
+                <li>> Indicateurs</li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-12 col-678-6 col-lg-3">
+                <h5 class="fw-bold">Contactez Nous</h5>
+
+                <p><i class="bi bi-telephone"></i> Phone: (00227) 99 98 97 96</p>
+                <p><i class="bi bi-geo-alt"></i> Location: Niamey, Niger</p>
+                <p><i class="bi bi-envelope"></i> support@agritech.com</p>
+            </div>
+
+            </div>
+    </footer> 
+    <div class="fou_Col text-white text-stard py-5 p-5">
+        © 2025 Codeloccol, All Rights Reserved
+    </div> 
+    <script src="app.js"></script>
+</body>

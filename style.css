@@ -1,0 +1,33 @@
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f5e46c, #d9cc5a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.login-card {
+    background: #0f3413;  
+    width: 420px;
+}
+
+.login-btn {
+    background: #1e8d58;
+    border: none;
+}
+.login-btn:hover {
+    background: #176c45;
+}
+.form-check .form-check-input{
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media (max-width:425px) {
+    .login-card {  
+    width: 300px;
+    }
+    
+}
+
